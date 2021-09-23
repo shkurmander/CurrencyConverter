@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Width="300">
-        <ListView IsItemClickEnabled="True" ItemsSource="{x:Bind vm.Valutes, Mode=OneWay}">
+        <ListView IsItemClickEnabled="True" ItemsSource="{x:Bind vm.Valutes, Mode=OneWay}" ItemClick="ListView_ItemClick">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:Valute">
                     <StackPanel Orientation="Horizontal"  >

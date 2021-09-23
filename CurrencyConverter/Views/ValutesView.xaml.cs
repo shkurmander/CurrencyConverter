@@ -26,5 +26,10 @@ namespace CurrencyConverter.Views
         {
             this.InitializeComponent();
         }
+
+        private void ListView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Frame.Navigate(typeof(CalcView), e.ClickedItem);
+        }
     }
 }

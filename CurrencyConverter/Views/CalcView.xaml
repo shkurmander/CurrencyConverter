@@ -31,16 +31,18 @@
         <Image x:Name="ChangeRow" Grid.Row="2" Source="Assets\change.png" VerticalAlignment="Center" Height="30" Width="50" Stretch="Fill"/>
 
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="80" >
-            <TextBlock x:Name="TextBlockCharCode1" HorizontalAlignment="Left" Text="RU" TextAlignment="Center" 
-                         FontWeight="Bold" Margin="0,0,0,0" Height="25" Width="70" />
-            <TextBlock x:Name="TextBlockCharCode2" HorizontalAlignment="Right" Text="USD" TextAlignment="Center" 
-                         FontWeight="Bold" Margin="0,0,0,0" Height="25" Width="70" />
+            <TextBlock x:Name="TextBlockCharCode1" 
+                       HorizontalAlignment="Left" Text="{x:Bind _vm.Valute1.CharCode, Mode=OneWay}" TextAlignment="Center" 
+                       FontWeight="Bold" Margin="0,0,0,0" Height="25" Width="70" />
+            <TextBlock x:Name="TextBlockCharCode2" Text="{x:Bind _vm.Valute2.CharCode, Mode=OneWay}" 
+                       HorizontalAlignment="Right" TextAlignment="Center" 
+                       FontWeight="Bold" Margin="0,0,0,0" Height="25" Width="70" />
         </StackPanel>
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="80">
             <TextBlock x:Name="TextBlockChange1" VerticalAlignment="Top" HorizontalAlignment="Left" TextWrapping ="Wrap" Text="Изменить валюту" TextAlignment="Center" 
                          FontWeight="Bold" Margin="0,50,0,0" Height="50" Width="70" Foreground="#FF0F8CF5" Tapped="TextBlockChange1_Tapped" />
             <TextBlock x:Name="TextBlockChange2" VerticalAlignment="Top" HorizontalAlignment="Right" TextWrapping ="Wrap" Text="Изменить валюту" TextAlignment="Center" 
-                         FontWeight="Bold" Margin="0,50,0,0" Height="50" Width="70" Foreground="#FF0F8CF5" />
+                         FontWeight="Bold" Margin="0,50,0,0" Height="50" Width="70" Foreground="#FF0F8CF5" Tapped="TextBlockChange2_Tapped" />
         </StackPanel>
 
     </Grid>
