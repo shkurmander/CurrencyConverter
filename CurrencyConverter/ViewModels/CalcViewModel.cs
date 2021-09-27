@@ -1,17 +1,11 @@
-﻿using CurrencyConverter.Model;
-using System;
-using System.Collections.Generic;
+﻿using CurrencyConverter.Models;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CurrencyConverter.ViewModels
 {
-    public class CalcViewModel : INotifyPropertyChanged
+    internal class CalcViewModel : ViewModelBase
     {
         private ValuteRepository _valuteRepository;
-        public event PropertyChangedEventHandler PropertyChanged;
        
         public bool ChangeButton1 { get; set; }
         public bool ChangeButton2 { get; set; }

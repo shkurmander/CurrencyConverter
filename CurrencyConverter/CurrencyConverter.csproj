@@ -122,9 +122,10 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\Valute.cs" />
-    <Compile Include="Model\ValuteRepository.cs" />
+    <Compile Include="Models\Valute.cs" />
+    <Compile Include="Models\ValuteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Base\ViewModelBase.cs" />
     <Compile Include="ViewModels\CalcViewModel.cs" />
     <Compile Include="ViewModels\ValutesViewModel.cs" />
     <Compile Include="Views\CalcView.xaml.cs">
