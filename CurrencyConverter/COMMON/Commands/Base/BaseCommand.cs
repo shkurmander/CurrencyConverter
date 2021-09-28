@@ -9,10 +9,8 @@ namespace CurrencyConverter.COMMON.Commands.Base
 {
     internal abstract class BaseCommand : ICommand
     {
-        public event EventHandler CanExecuteChanged
-       {
-         CommandManager    
-       }
+        public event EventHandler CanExecuteChanged;
+       
 
         public bool CanExecute(object parameter)
         {
