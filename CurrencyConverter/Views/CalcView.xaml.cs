@@ -18,36 +18,7 @@ namespace CurrencyConverter.Views
         {
             this.InitializeComponent();
             
-        }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            base.OnNavigatedTo(e);
-            if (e.Parameter != null)
-            {
-                if (_vm.ChangeButton1)
-                {
-                    _vm.Valute1 = e.Parameter as Valute;
-                    _vm.ChangeButton1 = false;
-                }
-                if(_vm.ChangeButton2)
-                {
-                    _vm.Valute2 = e.Parameter as Valute;
-                    _vm.ChangeButton2 = false;
-                }
-
-            }
-        }
-        private void TextBlockChange1_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            _vm.ChangeButton1 = true;
-            Frame.Navigate(typeof(ValutesView));
-        }
-        private void TextBlockChange2_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            _vm.ChangeButton2 = true;
-            Frame.Navigate(typeof(ValutesView));
-        }
-        
+        }    
 
 
     }

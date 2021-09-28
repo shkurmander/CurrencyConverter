@@ -38,18 +38,11 @@
                        HorizontalAlignment="Right" TextAlignment="Center" 
                        FontWeight="Bold" Margin="0,0,0,0" Height="25" Width="70" />
         </StackPanel>
-        
-        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="60">
-            <Button x:Name="ButtonChange1" Height="50" Width="80" Padding="0,0,0,0" VerticalAlignment="Top" Background="White" >
-                <TextBlock  HorizontalAlignment="Left" TextWrapping ="Wrap" Text="Изменить валюту" TextAlignment="Center" 
-                         FontWeight="Bold"  Height="50" Width="70" Foreground="#FF0F8CF5" />
-            </Button>
-            <Button x:Name="ButtonChange2" Height="50" Width="80" Padding="0,0,0,0" VerticalAlignment="Top" Background="White">
-                <TextBlock  HorizontalAlignment="Right" TextWrapping ="Wrap" Text="Изменить валюту" TextAlignment="Center" 
-                         FontWeight="Bold"  Height="50" Width="70" Foreground="#FF0F8CF5" />
-            </Button>   
-                                       
-            
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="80">
+            <TextBlock x:Name="TextBlockChange1" VerticalAlignment="Top" HorizontalAlignment="Left" TextWrapping ="Wrap" Text="Изменить валюту" TextAlignment="Center" 
+                         FontWeight="Bold" Margin="0,50,0,0" Height="50" Width="70" Foreground="#FF0F8CF5" Tapped="TextBlockChange1_Tapped" />
+            <TextBlock x:Name="TextBlockChange2" VerticalAlignment="Top" HorizontalAlignment="Right" TextWrapping ="Wrap" Text="Изменить валюту" TextAlignment="Center" 
+                         FontWeight="Bold" Margin="0,50,0,0" Height="50" Width="70" Foreground="#FF0F8CF5" Tapped="TextBlockChange2_Tapped" />
         </StackPanel>
 
     </Grid>
